@@ -1,0 +1,320 @@
+<!--MAIN FILE-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="frameworks/fixscreen.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="extras/index.css">
+    <script src="extras/scrollreveal.js"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+     <div id="top"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/profile1.jpg" class="rounded-circle" alt="Logo">
+                Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#top">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#backgrounds">Backgrounds</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link projects-link" href="https://harkovindustry.github.io/Project-Storage/" onclick="return confirmLeave();">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile -->
+    <div class="container section fast" id="profile">
+        <div class="row text-center">
+            <div class="col-md-6 offset-md-3">
+                <img src="images/profile2.jpg" class="img-fluid rounded-circle" alt="Portrait"
+                    style="max-width: 380px; width: 50vw;">
+                <h2 class="mt-3 medium">Jhon Anthony Catamco Pano</h2>
+                <p class="medium">Motivated and passionate second-year Bachelor of Science in Information Technology
+                    (BSIT)
+                    student at Buenavista Community College, eager to leverage programming and coding skills to
+                    contribute to innovative projects. With a solid foundation in IT principles and hands-on
+                    experience in project management through freelancing, I possess excellent communication and
+                    teamwork abilities honed during my time as a head waiter in catering services. Dedicated to
+                    continuous learning and professional development in the tech field.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="container section bg-light-brown fast" id="contact">
+        <h2 class="text-center">Contact Details</h2>
+        <div class="row text-center medium">
+            <div class="col-6 col-md-4 mb-3">
+                <a href="#" class="btn btn-primary w-100 slow"
+                    onclick="showSweetAlert('https://m.facebook.com/100081247295348', 'Visit Link', 'Copy Link')">Facebook</a>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+                <a href="#" class="btn btn-primary w-100 slow"
+                    onclick="showSweetAlert('https://www.m.me/100081247295348', 'Visit Link', 'Copy Link')">Messenger</a>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+                <a href="#" class="btn btn-primary w-100 slow"
+                    onclick="showSweetAlert('https://www.t.me/jacpano', 'Visit Link', 'Copy Link')">Telegram</a>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+                <a href="#" class="btn btn-primary w-100 slow"
+                    onclick="showSweetAlert('https://www.discordapp.com/users/436189570892300288', 'Visit Link', 'Copy Link')">Discord</a>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+                <a href="#" class="btn btn-primary w-100 slow"
+                    onclick="showSweetAlert('mailto:jacpano@gmail.com', 'Visit Link', 'Copy Link')">Email</a>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+                <a href="#" class="btn btn-primary w-100" onclick="showAlert()">Cellphone</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Backgrounds -->
+    <div class="container section bg-brown py-5 fast" id="backgrounds">
+        <h2 class="text-center text-white mb-4">Backgrounds</h2>
+        <div class="row">
+            <div class="col-md-4 my-2">
+                <h3 class="text-center text-light medium">Educational Background</h3>
+                <div class="bg-light p-3 rounded slow">
+                    <p class="text-dark text-center mb-3">Buenavista Community College - <strong>BSIT (Current)</strong>
+                    </p>
+                    <p class="text-dark text-center mb-3">Lagtang National Senior High School - <strong>(2020)</strong>
+                    </p>
+                    <p class="text-dark text-center mb-3">Lagtang National (Night) High School - <strong>(2018)</strong>
+                    </p>
+                    <p class="text-dark text-center mb-3">Lagtang Elementary School - <strong>(2014)</strong></p>
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <h3 class="text-center text-light medium">Working Background</h3>
+                <div class="bg-light p-3 rounded slow">
+                    <p class="text-dark text-center mb-3">CNS - <strong>Delivery Staff (2022-2023)</strong></p>
+                    <p class="text-dark text-center mb-3">UltimateFix - <strong>Assistant Technician (2020)</strong></p>
+                    <p class="text-dark text-center mb-3">Garces Royal Garden - <strong>Head/Waiter (2018-2020)</strong>
+                    </p>
+                    <p class="text-dark text-center mb-3">Avon Cosmetics - <strong>Collector (2012-2018)</strong></p>
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <h3 class="text-center text-light medium">Freelancing Background</h3>
+                <div class="bg-light p-3 rounded slow">
+                    <p class="text-dark text-center mb-3">Basic Programming/Coding Activities</p>
+                    <p class="text-dark text-center mb-3">Office Files Encoding/Preparation</p>
+                    <p class="text-dark text-center mb-3">Basic Designs & Edit</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="container section bg-dark-brown fast" id="about">
+        <h2 class="text-center medium">About</h2>
+        <div class="accordion medium" id="accordionExample">
+            <div class="accordion" id="accordionExample">
+                <!-- 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Which framework did you use to create your webpage?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                I am currently using Bootstrap to create my webpage because it is user-friendly and easy
+                                to work with, particularly due to its range of interactive features. Bootstrap's
+                                responsive design capabilities allow my site to look great on various devices, while its
+                                extensive library of components streamlines the development process. Overall, the
+                                flexibility and functionality of Bootstrap make it an ideal choice for building an
+                                engaging and visually appealing webpage.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What navbar elements do you have?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                My navbar features five key elements: (1) Profile, (2) Contact Details, (3) Backgrounds,
+                                (4)
+                                About, and (5) Projects. These elements are carefully chosen to provide a
+                                comprehensive and user-friendly experience, showcasing the essential aspects of my
+                                portfolio website. With this well-structured navigation, my site effectively highlights
+                                its strong fundamentals, allowing visitors to easily access important information and
+                                explore my work.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What key skills are showcased in your portfolio?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                In my portfolio, I showcase a range of key skills that I have developed, particularly in
+                                creating my webpage for the ADV subject. I have put forth my best efforts to balance its
+                                design while effectively incorporating various elements. Despite my previous experience
+                                not being focused on computers, I successfully managed to create my portfolio under
+                                stressful circumstances, meeting tight deadlines for certain components. This experience
+                                has not only demonstrated my adaptability and perseverance but also highlighted my
+                                commitment to developing my skills in web design.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Is the information on your portfolio real?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                I strive to ensure that at least 85% of the information on my portfolio is truthful and
+                                accurate. This webpage primarily serves as a platform for educational purposes, but I
+                                may have embellished certain aspects to enhance the overall presentation of my
+                                portfolio. While some backgrounds may not directly reflect my personal experiences, the
+                                content provided is intended to showcase a diverse range of skills and capabilities.
+                                Rest assured that my main goal is to provide transparent and informative content, even
+                                if some details are creatively enhanced for the sake of a well-rounded portfolio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Do you plan to use this portfolio in the future?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                Certainly not, as this webpage (Portfolio) is solely intended for educational purposes.
+                                However, I do anticipate creating another portfolio in the future that will feature an
+                                improved design and provide a more user-friendly experience. I already have ideas in
+                                mind for enhancing the aesthetics and overall functionality to better showcase my work
+                                and skills.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Do you prefer web development or software development?
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                I prefer software development over web development. Frankly, I am not particularly
+                                skilled in design, but I thoroughly enjoy tackling complex algorithms and delving into
+                                how programs function at a deeper level. Understanding the intricate workings behind
+                                software and the opportunity to solve challenging problems excite me. The ability to
+                                engage with the fundamental principles of programming and enhance my knowledge in that
+                                domain is truly fulfilling in my development journey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            What can you say about your current webpage?
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                I take pride in the progress of my current webpage as a student. I am committed to
+                                continuous learning in order to enhance my design skills further, leveraging frameworks
+                                like Bootstrap to create more sophisticated and refined designs. In the near future, I
+                                aspire to incorporate multiple frameworks to elevate the quality and functionality of my
+                                webpage, particularly for showcasing my portfolio. With dedication and ongoing
+                                exploration of various tools and techniques, I am determined to evolve and produce a
+                                standout digital presence that reflects my growth as a web designer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-white mt-auto fast">
+        <div class="row">
+            <div class="col text-center py-3">
+                <p>
+                    This portfolio is created solely for practice using the Bootstrap framework. It is not intended to
+                    promote
+                    self-mastery, even though the content presented is real. The focus is on developing skills and
+                    understanding
+                    the framework rather than showcasing expertise. </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK BUTTON -->
+    <button title="Go back to Storage Page" id="backToMain" class="btn btn-link" onclick="confirm('Back to Storage') ? window.location.href='../../../index.html' : null;" style="position:fixed; bottom:0; left:0; cursor:move;"><img src="../../../assets/img/logo.png" class="img-fluid rounded-circle" style="width: 30px; height: 30px;"></button>
+    
+    <button id="topButton" onclick="scrollToTop()">↑</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="frameworks/sweetalert2.min.js"></script>
+    <script src="extras/index.js"></script>
+</body>
+
+</html>
+
+<!--
+LINKS:
+- Google (https://fonts.google.com/)
+- Fontshare (https://www.fontshare.com/)
+- Bootstrap (https://getbootstrap.com/)
+- Sweetalert2 (https://www.npmjs.com/package/sweetalert2)
+-->
